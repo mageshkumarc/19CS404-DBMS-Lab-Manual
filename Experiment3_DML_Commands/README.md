@@ -47,75 +47,114 @@ SELECT column1, column2 FROM table_name WHERE condition;
 ```
 **Question 1**
 --
--- Paste Question 1 here
+<img width="600" height="583" alt="image" src="https://github.com/user-attachments/assets/f484bdba-c3d9-4bdc-82e9-5c568a08dde4" />
 
-```sql
--- Paste your SQL code below for Question 1
+
+```
+SELECT
+    id,
+    value1,
+    ABS(value1) AS 'absolute_value'
+FROM Calculations
 ```
 
 **Output:**
 
-![Output1](output.png)
+<img width="826" height="221" alt="image" src="https://github.com/user-attachments/assets/1d8d4212-bfd1-42cf-a78c-35b3de84b128" />
 
 **Question 2**
 ---
--- Paste Question 2 here
+<img width="600" height="583" alt="image" src="https://github.com/user-attachments/assets/21110155-a7f9-4eef-a5a3-bd821a65092a" />
 
-```sql
--- Paste your SQL code below for Question 2
+
+```
+UPDATE Employees
+SET SALARY=SALARY*2
+WHERE DEPARTMENT_ID=20 AND JOB_ID LIKE "%MAN"
 ```
 
 **Output:**
 
-![Output2](output.png)
+<img width="826" height="268" alt="image" src="https://github.com/user-attachments/assets/6becc373-4883-4391-9691-cc1bc409cd5c" />
 
 **Question 3**
 ---
--- Paste Question 3 here
+<img width="600" height="583" alt="image" src="https://github.com/user-attachments/assets/b48aaae1-b864-462c-9809-cdfc5ac4078f" />
 
-```sql
--- Paste your SQL code below for Question 3
+
+```
+UPDATE Employees
+SET EMAIL='not available',COMMISSION_PCT=0.55
+WHERE DEPARTMENT_ID=110
 ```
 
 **Output:**
 
-![Output3](output.png)
+<img width="826" height="314" alt="image" src="https://github.com/user-attachments/assets/8a344b01-6d67-457a-8c01-b957f8ad0f8a" />
+
 
 **Question 4**
 ---
--- Paste Question 4 here
+<img width="600" height="583" alt="image" src="https://github.com/user-attachments/assets/373b9361-533d-4152-873f-bd7273da1fdf" />
 
-```sql
--- Paste your SQL code below for Question 4
+
+```
+UPDATE products
+SET product_name='Grapefruit'
+WHERE product_id=4
 ```
 
 **Output:**
 
-![Output4](output.png)
+<img width="826" height="218" alt="image" src="https://github.com/user-attachments/assets/8696cade-e4f9-45d0-bac1-efa068b8662a" />
+
 
 **Question 5**
 ---
--- Paste Question 5 here
+<img width="600" height="583" alt="image" src="https://github.com/user-attachments/assets/4b475ce3-b374-4700-a046-2bcabcf1fb75" />
 
-```sql
--- Paste your SQL code below for Question 5
+
+```
+SELECT
+    id,
+    value2,
+    CASE
+        WHEN value2<10 THEN 'Small'
+        WHEN value2>=10 AND value2<=50 THEN 'Medium'
+        WHEN value2>50 THEN 'Large'
+    END AS size_category
+FROM Calculations
 ```
 
 **Output:**
 
-![Output5](output.png)
+<img width="826" height="230" alt="image" src="https://github.com/user-attachments/assets/924679c2-4b4c-4042-b0ad-703d8dbe8360" />
+
 
 **Question 6**
 ---
--- Paste Question 6 here
+<img width="600" height="568" alt="image" src="https://github.com/user-attachments/assets/7a61b62c-00f8-4ffb-a820-cce7b9b20a38" />
 
-```sql
--- Paste your SQL code below for Question 6
+
+```
+SELECT 
+    ename,
+    hiredate,
+    CASE strftime("%w",hiredate)
+        WHEN '0' THEN 'Sunday'
+        WHEN '1' THEN 'Monday'
+        WHEN '2' THEN 'Tuesday'
+        WHEN '3' THEN 'Wednesday'
+        WHEN '4' THEN 'Thursday'
+        WHEN '5' THEN 'Friday'
+        WHEN '6' THEN 'Saturday'
+    END AS day_of_week
+FROM emp
 ```
 
 **Output:**
 
-![Output6](output.png)
+<img width="1460" height="567" alt="image" src="https://github.com/user-attachments/assets/d5b4525b-236b-4801-8090-4df9d29b5ba1" />
 
 **Question 7**
 ---
