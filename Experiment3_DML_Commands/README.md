@@ -154,55 +154,70 @@ FROM emp
 
 **Output:**
 
-<img width="1460" height="567" alt="image" src="https://github.com/user-attachments/assets/d5b4525b-236b-4801-8090-4df9d29b5ba1" />
+<img width="826" height="567" alt="image" src="https://github.com/user-attachments/assets/d5b4525b-236b-4801-8090-4df9d29b5ba1" />
 
 **Question 7**
 ---
--- Paste Question 7 here
+<img width="600" height="700" alt="image" src="https://github.com/user-attachments/assets/f0732bee-b8a7-4dc3-8e1a-316a48006466" />
 
-```sql
--- Paste your SQL code below for Question 7
+
+```
+SELECT * FROM customer
+WHERE cust_name LIKE '%n'
 ```
 
 **Output:**
 
-![Output7](output.png)
+<img width="826" height="567" alt="image" src="https://github.com/user-attachments/assets/acdf8a0b-fb6a-4a72-befb-f261596ab856" />
+
 
 **Question 8**
 ---
--- Paste Question 8 here
+<img width="600" height="339" alt="image" src="https://github.com/user-attachments/assets/b30cc783-1e5b-45a1-9af2-51f2bf2944db" />
 
-```sql
--- Paste your SQL code below for Question 8
+
+```
+DELETE FROM Doctors
+WHERE doctor_id=1
 ```
 
 **Output:**
 
-![Output8](output.png)
+<img width="826" height="205" alt="image" src="https://github.com/user-attachments/assets/29e6a443-a754-43b1-9c89-70d2064ea8c3" />
+
 
 **Question 9**
 ---
--- Paste Question 9 here
+<img width="600" height="694" alt="image" src="https://github.com/user-attachments/assets/f23b8a0c-0ceb-462d-9667-c8fc0a8bea63" />
 
-```sql
--- Paste your SQL code below for Question 9
+
+```
+SELECT
+    product_id,
+    original_price,
+    discount_percentage,
+    original_price*(1-discount_percentage) AS discounted_price
+FROM Products
 ```
 
 **Output:**
 
-![Output9](output.png)
+<img width="826" height="239" alt="image" src="https://github.com/user-attachments/assets/df4ffc81-b22d-4990-a3f7-6d66028763f4" />
+
 
 **Question 10**
 ---
--- Paste Question 10 here
+<img width="600" height="311" alt="image" src="https://github.com/user-attachments/assets/74bfcb65-9051-4031-95a8-b4460438aee0" />
 
-```sql
--- Paste your SQL code below for Question 10
+
+```
+SELECT * FROM salesman
+WHERE commission BETWEEN 0.12 AND 0.14
 ```
 
 **Output:**
 
-![Output10](output.png)
+<img width="826" height="512" alt="image" src="https://github.com/user-attachments/assets/2cc3a4d1-f589-43ac-8aed-3605f7459620" />
 
 ## RESULT
 Thus, the SQL queries to implement DML commands have been executed successfully.
